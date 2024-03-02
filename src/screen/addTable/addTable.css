@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center !important;
+    vertical-align: middle;
+    font-size: 11px;
+    white-space: nowrap; /* 기본값, 줄바꿈이 일어나지 않음 */
+    white-space: normal; /* 필요한 경우에만 줄바꿈 */
+  }
+  

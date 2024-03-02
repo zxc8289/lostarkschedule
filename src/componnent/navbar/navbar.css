@@ -1,0 +1,128 @@
+.custom-navbar {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc; 
+    height: 68px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-section {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    margin-left: 2.5rem; 
+}
+
+.nav-links {
+    flex: 6; 
+    display: flex;
+    justify-content: flex-start;
+    font-family: "pretendard-semibold";
+    align-items: center; 
+}
+
+.nav-links a {
+    margin-right: 3.0rem;
+    color: #7D8395;
+    font-size: 16px; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+}
+
+
+.nav-links a:hover {
+    color: #15A658; 
+}
+
+.user-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-right: 2.5rem; 
+}
+
+.user-dropdown {
+    display: flex;
+    align-items: center; /* 이미 세로 중앙 정렬이 적용됨 */
+   
+}
+
+.user-dropdown img {
+    margin-right: 0.5rem;
+}
+
+.user-dropdown button {
+    padding: 0.25rem 0.5rem;
+}
+
+.user-dropdown span{
+    color: black; 
+    font-family: "pretendard-semibold";
+    font-size: 16px;
+    transition: color 0.3s; 
+    text-decoration: none; 
+    background: none;
+    border: none;
+    padding: 0; 
+  
+}
+
+.brand-section img {
+    margin-top: -5px; /* 이미지를 위로 5px 옮김 */
+}
+
+.user-section a, .user-section button {
+    margin-left: 1rem; 
+    font-family: "pretendard-semibold";
+    font-size: 16px;
+    transition: color 0.3s; 
+    text-decoration: none; 
+    background: none;
+    border: none;
+    padding: 0; 
+    cursor: pointer;
+}
+
+.user-section a:hover, .user-section button:hover {
+    color: #15A658; 
+}
+
+.user-dropdown .profile-dropdown-menu {
+    font-family: "pretendard-semibold";
+    font-size: 16px;
+    color: black;
+    margin-top: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0 0 7px 7px;
+    width: 150px;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    background: white;
+    border: 1px solid #E6E8EC;
+    border-top: none;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+
+  /* navbar.css */
+.login-link {
+    color: #7D8395; /* 기본 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+  }
+  
+  .login-link:hover {
+    color: #15A658; /* 마우스 오버 시 색상 */
+  }
+  

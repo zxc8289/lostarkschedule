@@ -1,0 +1,136 @@
+.groupcreator-addbutton {
+  width: 70px;
+  height: 28px;
+  border: 1px solid #15A658;
+  color: #15A658;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* 원형 버튼을 만듭니다 */
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 마우스 호버 시의 스타일 */
+.groupcreator-addbutton:hover {
+  background-color: #15A658;
+  color: white;
+}
+
+  
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5F5;
+  min-height: 100vh; /* 화면 높이에 맞춤 */
+}
+
+
+@media screen and (min-width: 1950px) {
+  .flex-left {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    margin-left: 2.5rem; 
+  }
+
+  .flex-center {
+    margin-top: 40px;
+    flex: 1.63; 
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 자식 요소들을 쌓습니다 */
+    justify-content: flex-start;
+    font-family: "pretendard-semibold";
+  }
+
+  .flex-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5rem; 
+  }
+}
+
+@media screen and (max-width: 1949px) {
+  .flex-left {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    margin-left: 2.5rem; 
+    
+  }
+
+  .flex-center {
+    margin-top: 40px;
+    flex: 3.5; 
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 자식 요소들을 쌓습니다 */
+    justify-content: flex-start;
+    font-family: "pretendard-semibold";
+  }
+
+  .flex-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5rem; 
+  }
+}
+
+
+.my-modal .modal-dialog {
+  top: 35%;
+  margin-top: -50px;
+  max-width: 580px;
+}
+
+.my-modal .modal-content {
+  border-radius: 18px; 
+}
+
+.my-modal3 .modal-dialog {
+  top: 30%;
+  margin-top: -50px;
+  max-width: 490px;
+}
+
+.my-modal3 .modal-content {
+  border-radius: 18px; 
+}
+
+
+.my-modal5 .modal-dialog {
+  top: 30%;
+  margin-top: -50px;
+  max-width: 650px;
+}
+
+.my-modal5 .modal-content {
+  border-radius: 18px; 
+}
+
+.flex-left, .flex-center, .flex-right {
+  min-height: 100vh; 
+}
+
+
+.text-center{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  
+}
+
+.spinner-border{
+  display: block;
+  position: fixed;
+  top: calc(50% - (58px / 2 ));
+  right: calc(50% - (58px / 2 ));
+}
+
+

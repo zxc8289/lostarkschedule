@@ -1,0 +1,62 @@
+.tbl_main {
+	border: 1px solid black;
+	width: 350px;
+	height: 350px;
+	transform: rotate(45deg);
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+    user-select: none; /* 기본값 */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.tbl_main td {
+    width: 109px;
+	height: 109px;
+	cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+	
+	font-size: 30px;
+	font-weight: bold;
+    
+}
+
+.tbl_main td div{
+    transform: rotate(-45deg);
+}
+
+
+.div_check_time {
+	width: 250px;
+	height: 50px;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.btn_check {
+	background-color: #555555;
+	border: none;
+	border-radius: 25px;
+	width: 200px;
+    padding: 5px 22px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 33px;
+	cursor: pointer;
+	color: white;
+    
+}
+
+.div_body {
+	width: 700px;
+	
+	margin: auto;
+    margin-top: 40px;
+}

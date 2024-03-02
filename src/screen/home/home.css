@@ -1,0 +1,16 @@
+  .home-flex-container {
+    display: flex;
+    background-color: #F5F5F5;
+    min-height: calc(100vh - 68px);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .home-flex{
+   text-align: center;
+   margin-bottom: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
