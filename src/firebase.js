@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getDatabase, ref, set, serverTimestamp } from "firebase/database";
+import { getDatabase, ref, set, serverTimestamp } from "firebase/database"; // 리얼타임 베이스
+import { getFirestore, collection } from 'firebase/firestore'; // 파이어 스토어
 import { getAuth, signInWithRedirect, GoogleAuthProvider, signOut as firebaseSignOut } from "firebase/auth";
 
 const firebaseConfig = {
@@ -19,6 +20,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase(app);
+const firestore = getFirestore(app); // Firestore 인스턴스 초기화
+
+const myCollection = collection(firestore, 'myCollection');
 
 // Firebase Authentication 초기화
 const auth = getAuth(app);
@@ -39,4 +43,4 @@ const ServerValue = {
   TIMESTAMP: serverTimestamp(),
 };
 
-export { db, ref, set, ServerValue, auth, signInWithGoogle, signOut };
+export { db, ref, set, ServerValue, auth, signInWithGoogle, signOut, firestore, myCollection };

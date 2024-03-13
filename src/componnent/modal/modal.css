@@ -1,0 +1,23 @@
+.message-modal .modal-dialog {
+    top: 37%;
+    margin-top: -50px;
+    max-width: 300px;
+  }
+  
+.message-modal .modal-content {
+    border-radius: 18px; 
+}
+
+
+.schedule-modal .modal-dialog {
+  top: 25%;
+  margin-top: -50px;
+  max-width: 1200px;
+}
+
+.schedule-modal .modal-content {
+  border-radius: 18px; 
+  background-color: #D9D9D9;
+}
+
+

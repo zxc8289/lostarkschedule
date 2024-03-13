@@ -1,9 +1,11 @@
   .home-flex-container {
     display: flex;
     background-color: #F5F5F5;
-    min-height: calc(100vh - 68px);
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    font-display: block ;
+    padding-top: 70px;
   }
   
   

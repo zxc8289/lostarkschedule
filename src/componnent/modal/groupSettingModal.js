@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Modal } from 'react-bootstrap';
 
-function GroupSettingModal({ show, onHide, onClick, onClick2, onChange, onChange2 }) {
+function GroupSettingModal({ show, onHide, onClick, onClick2, onChange, onChange2, title, subtitle, subtitle2, textInputName, textInputName2, placeholder }) {
     return (
         <Modal show={show} onHide={onHide} className="my-modal5">
             <Modal.Body>
@@ -9,17 +9,17 @@ function GroupSettingModal({ show, onHide, onClick, onClick2, onChange, onChange
                     display: 'flex', flexDirection: 'column', padding: 20, textAlign: 'center', gap: 40
                 }}>
                     <div style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: 10 }}>
-                        <div style={{ fontSize: 30, color: '#15A658', fontFamily: 'pretendard-bold' }}>그룹 설정</div>
-                        <div style={{ fontSize: 13, color: '#7D8395', fontFamily: 'pretendard-regular' }}>표시할 캐릭터와 숨길캐릭터를 선택하여 설정해보세요.<br />초기 설정값은 모든 캐릭터를 표시합니다.</div>
+                        <div style={{ fontSize: 30, color: '#15A658', fontFamily: 'pretendard-bold' }}>{title}</div>
+                        <div style={{ fontSize: 13, color: '#7D8395', fontFamily: 'pretendard-regular' }}>{subtitle}<br />{subtitle2}</div>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: 20, paddingLeft: 20 }} >
                         <div style={{
                             display: 'flex', flexDirection: 'row', gap: 20,
                             alignItems: 'center',
                         }}>
-                            <div style={{ fontSize: 18, fontFamily: 'pretendard-semibold', color: '#434346' }}>그룹 이름 변경</div>
+                            <div style={{ fontSize: 18, fontFamily: 'pretendard-semibold', color: '#434346' }}>{textInputName}</div>
                             <input
-                                placeholder='그룹 이름을 입력하세요.'
+                                placeholder={placeholder}
                                 onChange={onChange}
                                 type="text"
                                 style={{
@@ -39,7 +39,7 @@ function GroupSettingModal({ show, onHide, onClick, onClick2, onChange, onChange
                             display: 'flex', flexDirection: 'row', gap: 20,
                             alignItems: 'center', fontFamily: 'pretendard-semibold',
                         }}>
-                            <div style={{ fontSize: 18, fontFamily: 'pretendard-semibold', color: '#434346' }}>수정 권한 부여</div>
+                            <div style={{ fontSize: 18, fontFamily: 'pretendard-semibold', color: '#434346' }}>{textInputName2}</div>
                             <div style={{
                                 display: 'flex',
                                 alignItems: 'center',

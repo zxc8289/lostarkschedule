@@ -1,0 +1,231 @@
+.gateButtonsContainer {
+    display: flex; /* Flex 컨테이너로 설정 */
+    flex-direction: row; /* 아이템들을 가로로 배치 */
+    justify-content: center; /* 가로 정렬 방식을 중앙 정렬로 설정 */
+    align-items: center; /* 세로 정렬 방식을 중앙 정렬로 설정 */
+  }
+  
+
+.gateButton {
+    border: 1px solid #ff6666; /* 빨간색 테두리 */
+    border-radius: 50%; /* 원형 버튼 */
+    width: 28px; /* 버튼 너비 */
+    height: 28px; /* 버튼 높이 */
+    line-height: 35px; /* 텍스트를 버튼 중앙에 위치 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin: 0 2px; /* 좌우 마진 */
+    background-color: #ffffff; /* 배경색은 흰색 */
+    color: #ff6666; /* 텍스트 색상은 빨간색 */
+    cursor: pointer; /* 마우스 오버시 커서 변경 */
+    transition: all 0.3s; /* 부드러운 색상 변화 효과 */
+    font-size: 14px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 0; /* 패딩 제거 */
+    font-family: pretendard-regular;
+  }
+  
+/* 노말 모드 관문 버튼 (기본 파란색, 선택시 진한 파란색) */
+.gateButton.normal {
+  color: #4B78FF; /* 파란색 텍스트 */
+  border: 1px solid #4B78FF; /* 파란색 테두리 */
+}
+
+.gateButton.normal.selected {
+  background-color: #4B78FF; /* 진한 파란색 배경 */
+  color: #ffffff; /* 흰색 텍스트 */
+}
+
+/* 하드 모드 관문 버튼 (기본 빨간색, 선택시 진한 빨간색) */
+.gateButton.hard {
+  color: #FF5252; /* 빨간색 텍스트 */
+  border: 1px solid #FF5252; /* 빨간색 테두리 */
+}
+
+.gateButton.hard.selected {
+  background-color: #FF5252; /* 진한 빨간색 배경 */
+  color: #ffffff; /* 흰색 텍스트 */
+}
+
+.gateButton.default {
+    border: 1px solid #8B8B8B;
+    color: #8B8B8B; /* 빨간색 텍스트 */
+   
+}
+
+.gateButton.default.selected {
+  background-color: #8B8B8B;
+  color: #ffffff; /* 흰색 텍스트 */
+}
+
+table {
+    border-collapse: collapse; /* 테두리 겹치는 부분 처리 */
+    width: 100%; /* 필요에 따라 조정 */
+    
+}
+
+th, td {
+    font-family: pretendard-semibold;
+    text-align: center !important;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #7D8395 !important;
+    white-space: normal;
+    height: 60px;
+    width: 150px !important;
+    border: 2px solid #E6E8EC !important; /* 테두리 적용 */
+    border-left: none !important; /* 첫 번째 셀의 왼쪽 테두리 제거 */
+    border-right: none !important; /* 마지막 셀의 오른쪽 테두리 제거 */
+    border-top: none !important; 
+}
+
+
+
+.character-info {
+    font-family: pretendard-regular;
+    font-size: 12px !important;
+    color: #7D8395;
+
+}
+
+
+
+.raidtab{
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  color: #7D8395;
+  margin-right: 15px;
+}
+
+.raidschedule-head{
+    display: flex;
+    background-color: white;
+    height: 64px;
+    padding: 20px;
+    border-bottom: 1px solid #15A658;
+    margin-top: 10px;
+}
+
+.raidschedule-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 40px;
+  
+}
+
+
+.viewsettingbutton{
+  border-radius: 100px;
+  border: none;
+  background-color: #E6E6E6;
+  color: #7D8395;
+  font-size: 14;
+  padding: 4px 20px 4px 20px;
+  margin-right: 10px;
+}
+
+
+.raideditor{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #AFAFAF;
+  font-size: 14px;
+  font-family: pretendard-regular;
+  
+}
+
+.raid-party-list{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 64px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.centerButtonContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.leavegroup-button {
+  border: 1px solid #FF4646;
+  color: #FF4646;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* 원형 버튼을 만듭니다 */
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px 4px 20px;
+ 
+}
+
+
+.leavegroup-button:hover {
+  background-color: #FF4646;
+  color: white;
+}
+
+.button-group{
+  display: flex;
+  
+}
+
+.button-group div {
+  border: 1px solid #15A658;
+  color: #15A658;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* 원형 버튼을 만듭니다 */
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 15px 4px 15px;
+  margin-left: 10px;
+}
+
+
+.button-group div:hover {
+  background-color: #15A658;
+  color: white;
+}
+
+
+.my-modal2 .modal-dialog {
+  top: 35%;
+  margin-top: -50px;
+  max-width: 450px;
+}
+
+.my-modal2 .modal-content {
+  border-radius: 18px; /* 또는 원하는 크기 */
+}
+
+.my-modal4 .modal-dialog {
+  top: 23%;
+  margin-top: -50px;
+  max-width: 700px;
+}
+
+.my-modal4 .modal-content {
+  border-radius: 18px; /* 또는 원하는 크기 */
+}
+

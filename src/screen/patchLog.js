@@ -1,6 +1,7 @@
 import { Card, ListGroup, Pagination } from "react-bootstrap";
 import patchData from "../const/patchData";
 import { useState } from "react";
+import NProgress from 'nprogress';
 
 function PatchLog() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,8 +18,7 @@ function PatchLog() {
   };
 
   return (
-    <div className="container mt-4 custom-container">
-
+    <div className="container mt-4 custom-container" style={{ paddingTop: 70 }}>
       {currentItems.map((data, index) => (
         <Card key={index} className="mb-4">
           <Card.Header>{data.date}</Card.Header>

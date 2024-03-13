@@ -6,21 +6,7 @@ import { useNavigate, Link } from "react-router-dom"; // useNavigate와 Link를 
 import { FiMoreVertical } from 'react-icons/fi';
 import { Button, Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { ref, set, push, child, onValue, update } from "firebase/database";
-
-function useOutsideAlerter(ref, setShowDropdown) {
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setShowDropdown(false);
-      }
-    }
-
-    document.addEventListener("click", handleClickOutside);
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [setShowDropdown]);
-}
+import useOutsideAlerter from '../../hoook/useOutsideAlerter';
 
 
 function NavBar() {
@@ -75,7 +61,7 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar expand="lg" className="custom-navbar">
+      <Navbar expand="lg" className="custom-navbar" fixed='top'>
         <div className="nav-container">
           <div className="brand-section">
             <Link to="/" className="navbar-brand">
@@ -83,9 +69,10 @@ function NavBar() {
             </Link>
           </div>
           <div className="nav-links">
-            <Link to={user ? "/raidschedulecreator" : "/login"}>주간숙제</Link>
+            <Link to={user ? "/weeklygroupcreator" : "/login"}>주간숙제</Link>
             {/* <Link to="/ricecalculator">쌀계산기</Link>
             <Link to="/추가예정">컨닝페이퍼</Link> */}
+            <Link to={user ? "/schedulegroupcreator" : "/login"}>고정 파티</Link>
             <Link to="/patchlog">패치로그</Link>
           </div>
           <div className="user-section">

@@ -30,15 +30,12 @@ function GroupModal({ show, onHide, title, subTitle, content, placeholder, value
                         onChange={onChange}
                         // onKeyDown={handleKeyDown}
                         style={{
-                            marginRight: 20,
                             border: "1px solid #B4B4B4",
                             background: "#EDEDED",
                             color: "#727272",
                             borderRadius: 50,
                             fontFamily: "pretendard-regular",
                             fontSize: 14,
-                            justifyContent: 'center',
-                            alignItems: 'center',
                             height: '37px',
                             width: 380,
                             textAlign: 'center',
